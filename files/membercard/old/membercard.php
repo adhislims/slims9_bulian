@@ -277,7 +277,7 @@ function floatvalue($val){
         <div class="container_div" id="front_side">
           <div></div>
           <div id="logo_div">
-            <img height="40px" width="40px" src="<?php echo SWB.'files/membercard/old/'.$sysconf['print']['membercard']['logo'] ?>" />
+            <img height="40px" width="40px" src="<?php echo SWB.'files/membercard/old/'.$sysconf['print']['membercard']['logo'] ?>" /></img>
           </div>
           <div id="header1_div">
             <h1>
@@ -344,10 +344,10 @@ function floatvalue($val){
             <br />
             Photo size:<br />
             <?php echo $sysconf['print']['membercard']['photo_width'] ?> X
-            <?php echo $sysconf['print']['membercard']['photo_height'] ?> cm</div>
+            <?php echo $sysconf['print']['membercard']['photo_height'] ?> cm</img></div>
           <div id="photo_div"><img width="<?php echo $sysconf['print']['membercard']['photo_width'] * $sysconf['print']['membercard']['factor'] ?>px"
               height="<?php echo $sysconf['print']['membercard']['photo_height']*$sysconf['print']['membercard']['factor'] ?>px"
-              src="<?php echo SWB.IMG ?>/persons/<?php echo $card['member_image'] ?>" /></div>
+              src="<?php echo SWB.IMG ?>/persons/<?php echo $card['member_image'] ?>" /></img></div>
           <?php echo $sysconf['print']['membercard']['include_expired_label']?'':'<!--' ?>
           <div class="exp_div">
             <?php echo __('Expiry Date') ?> :
@@ -356,11 +356,11 @@ function floatvalue($val){
           <?php echo $sysconf['print']['membercard']['include_barcode_label']?'':'<!--' ?>
           <div class="barcode_div">
             <img width="175px" height="40px" src="<?php echo SWB.IMG.'/barcodes/'.str_replace(array(' '), '_', $card['member_id']) ?>.png"
-              style="width:<?php echo $sysconf['print']['membercard']['barcode_scale'] ?>%; border=" 0px" /></div>              
+              style="width:<?php echo $sysconf['print']['membercard']['barcode_scale'] ?>%; border=" 0px" /></img></div>              
           <?php echo $sysconf['print']['membercard']['include_barcode_label']?'':'-->' ?>
           <div class="stamp_div">
-            <div class="stamp_file_div"><img class="" height="35px" width="35px" src="<?php echo SWB.'files/membercard/old/'.$sysconf['print']['membercard']['stamp_file'] ?>"></div>
-            <div class="sign_file_div"><img class="" height="30px" width="100px" src="<?php echo SWB.'files/membercard/old/'.$sysconf['print']['membercard']['signature_file'] ?>"></div>
+            <div class="stamp_file_div"><img class="" height="35px" width="35px" src="<?php echo SWB.'files/membercard/old/'.$sysconf['print']['membercard']['stamp_file'] ?>"></img></div>
+            <div class="sign_file_div"><img class="" height="30px" width="100px" src="<?php echo SWB.'files/membercard/old/'.$sysconf['print']['membercard']['signature_file'] ?>"></img></div>
             <p class="stamp city">
               <?php echo $sysconf['print']['membercard']['city'] ?>,
               <?php echo $card['register_date'] ?>
@@ -378,7 +378,7 @@ function floatvalue($val){
       <td valign="top">
         <div class="container_div" id="back_side">
           <div></div>
-          <div id="logo_div"><img height="35px" width="35px" src="<?php echo SWB.'files/membercard/old/'.$sysconf['print']['membercard']['logo'] ?>" /></div>
+          <div id="logo_div"><img height="35px" width="35px" src="<?php echo SWB.'files/membercard/old/'.$sysconf['print']['membercard']['logo'] ?>" /></img></div>
           <div id="header2_div">
             <h1>
               <?php echo $sysconf['print']['membercard']['back_header1_text'] ?>
